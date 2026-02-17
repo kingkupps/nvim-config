@@ -45,8 +45,8 @@ return {
 				completion = { completopt = "menu,menuone,noinsert,noselect" },
 				preselect = cmp.PreselectMode.None,
 				mapping = cmp.mapping.preset.insert({
-					["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.selectbehavior.select }),
-					["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.selectbehavior.select }),
+					["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+					["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
 					["<CR>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
 				}),
 				sources = cmp.config.sources({
